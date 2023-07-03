@@ -1,0 +1,496 @@
+ 
+ .pur{border:1px solid purple;}
+ .ora{border:1px solid rgb(221, 109, 45);}
+ .blu{border:1px solid blue;}
+ 
+ .logo{
+     /* color: #F47c20;color: #F15A29;color: #3782A5; color: #62B5BE; color: #808285; color: #B3A892; */
+     font-family: "Libre Baskerville";
+     color: #8E3463;
+     color: #9E6F98;
+     color: #553265;
+     color: #2C112A;
+     color: #DF6589FF;
+     color:#b7f806;color:#f8cc06
+ }
+ 
+.heading_1{
+    color: #8E3463;
+    font-weight: bold;
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+/* 
+.heading_2{
+    color: #2C112A;
+    font-family: "Libre Baskerville", sans-serif;
+} */
+
+ 
+ /*    ***********************************    INDEX     ****************************************      */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+
+ 
+/* body{
+    background: -webkit-linear-gradient(100deg,#553265,#9E6F98,#8E3463);
+} */
+
+
+/*                                                TOPBAR                                      */
+
+.topbar{
+    background-color: #553265;
+}
+
+.social,.user{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+.social li :hover,.user li :hover{
+     color:#9E6F98;
+}
+
+.fa-top{
+    width: 16px;
+    color: white;
+}
+
+.div_12{
+    color: white;
+}
+
+.user li form button{
+    font-size: 15px;
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+}
+
+.user_input{
+    display: none !important;
+    position: absolute;
+    top: 10px;
+    right:78px;
+}
+
+.user_button:hover + .user_input, .user_input:hover{
+ display: block  !important;
+}
+
+/*                                          NAVIGATION                                            */
+
+.navigation{
+    background-color: #9E6F98;
+    box-shadow: 0px 1px 10px  rgb(88, 85, 85);
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 16px;
+}
+
+.navbar-brand{
+    color:#f8cc06 !important;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px indigo;
+}
+
+.navb{
+    margin-right: 7px ;
+}
+.navb a:hover{
+color:#f8cc06 !important ;
+}
+
+.submenu-1 li a{
+    text-decoration: none !important;
+    color:rgb(0, 0, 0); font-size: 16px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.submenu-2{
+    display: none;
+}
+
+.submenu-2 li{
+     width: max-content;
+}
+
+.submenu-2 li a{
+    /* text-decoration: none; */
+    padding: 5px 15px !important;
+    color: rgb(88, 85, 85);
+}
+
+.nav-link:hover + .submenu-1, .submenu-1:hover{
+     display: block  !important;
+     box-shadow: 1px 1px 1px gray;
+}
+
+
+.dropdown-item:hover + .submenu-2, .submenu-2:hover{
+    display: block  !important;
+}
+
+.submenu-1 ul li a:hover{
+    background-color: rgb(136, 128, 128) !important;
+    color: black !important;
+}
+
+.submenu-1 ul li a:hover + .submenu-2, .submenu-2:hover{
+    background-color: rgb(228, 219, 230) !important;
+}
+
+
+/*                                       SLIDER                                                     */
+
+ @media only screen and (min-width:768px){
+    .carousel-item img{
+        height: 500px;    
+    }
+ }
+
+ /*                                     ABOUT US                                                     */
+
+
+.fa-about{ 
+     background: -webkit-linear-gradient(left, rgb(128, 115, 127), #8E3463) !important;
+     border-radius: 50px 50px 50px 50px;
+     padding:20px;
+     margin: 0px;
+     width: 30px;
+     height: 30px;
+     justify-content: center;
+     text-align: justify;
+}
+
+.fa-info,.fa-briefcase,.fa-handshake-o{
+    font-size: 20px  !important;
+    color: white;
+    position: absolute;
+    top: 11px;
+}
+
+.about-head div{
+    display: flex;
+}
+
+.div_block{
+    display: block !important;
+}
+
+/*                                       SERVICES                                                       */
+
+.pic{
+    width: 60%;
+    margin: auto;
+    border: 3px solid rgb(158, 144, 149);
+}
+
+.prod-det{
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.see a{
+     text-decoration: none;
+     color:  #8E3463;
+}
+
+.see a:hover{
+    font-weight: bold;
+}
+
+.products{
+    background-color: rgb(241, 231, 243);
+
+}
+
+.card_1{
+    border-radius: 40px 0px 40px 0px;
+    background: -webkit-linear-gradient(#553265, #9E6F98);
+    height: 350px;
+    border: 3px solid rgb(211, 208, 211);
+    border-style: outset;
+}
+
+.button{
+    background-color: rgb(199, 136, 169);
+    color:#8E3463 ;
+    font-weight: 700;
+}
+
+.button:hover{
+   background-color: rgb(209, 205, 205);
+    color:#8E3463;
+    transform: translate(20px, 0px) scale(1.2,1.2);
+}
+
+.code{
+    font-size: x-small;
+    font-weight: 200;
+}
+
+/*                                       SHIPPING                                                        */
+
+
+@media only screen and (max-width: 576px) {
+    .shipping-row div p{
+        font-size: 15px ;
+    }
+
+    .shipping-row div i{
+        font-size: 60px !important;
+    }
+
+    .shipping-row div{
+        width: 150px;
+        font-size: small !important;
+    }
+    
+
+ }
+
+.shipping-row{
+    border:2px solid #8f8c8f;
+}
+
+.fa-truck{
+    font-size: 65px !important;
+    color:rgb(150, 72, 112);
+}
+
+#flip{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+.ship-text p{
+    font-size: 25px;
+    /* line-height: 20px; */
+    color:#8E3463;
+}
+
+.ship-text span a{
+    font-size: 14px;
+    color: #553265;
+    text-decoration: none;
+}
+
+.ship-text span a:hover{
+    color: rgb(238, 37, 37);
+}
+
+/*                                          FOOTER                                                       */
+
+.footer{
+    background: -webkit-linear-gradient(left,rgb(53, 37, 53) 20%,rgb(54, 34, 53) 40%,#2C112A 80%) ;
+    color: rgb(214, 205, 205);
+}
+
+.footer div div div ul li a{
+    color: rgb(214, 205, 205);
+    text-decoration: none;
+}
+   
+.navigate-footer li{
+    list-style: none;
+}
+
+.navigate-footer li a:hover{
+    color:#9E6F98 ;
+}
+
+
+.links{
+    display: flex;
+}
+
+.fa-footer{
+   font-size: 20px !important;
+   color:#9E6F98 ;
+}
+
+.fa-footer:hover{
+    color:rgb(107, 104, 107) ;
+ }
+
+.back{
+    margin: 0;
+    transform: translate(100px,-6px);
+}
+
+.back a{
+    background: -webkit-linear-gradient(left, rgb(128, 115, 127), #8E3463);
+    border:1px solid rgb(102, 102, 97);
+    color:purple;
+    font-weight: 900;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 1px 5px;
+}
+
+
+/*                                          FOOTER_2                                                      */
+
+.footer_2{
+    border-top: thin solid grey;
+}
+.footer_2 p{
+    color:#fdaf06 !important;
+    font-weight: bold;
+    /* text-shadow: 3px 3px 1px indigo; */
+    font-size: 40px;
+    text-shadow:1px 1px black,2px 2px 4px grey;
+    line-height: 40px;
+}
+
+.footer_2 p span{
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: none;
+}
+
+
+
+/*                               FOOTER PART 3                                                          */
+
+.footer_3{
+background-color: gray;
+color: purple;
+font-weight: bold;
+}
+
+.footer_3 p{
+    transform: translate(0px, 3px);
+}
+
+
+
+/*    ************************************ ABOUT  US     *****************************************         */
+
+#about-us-body{
+    background-image: url("IMAGE/bg5.jpg")  !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-us div div div{
+    background-color: rgb(247, 243, 247);
+}
+
+/* ***********************************     SERVICES     *********************************************     */
+
+#services-body{
+    background-image: url("IMAGE/bg5.jpg");
+    background-size: cover;
+}
+
+.border-outset{
+    border: outset;
+    text-align: center; 
+    box-shadow: 10px 10px 10px rgb(133, 127, 127);
+    width: 249px; height: 246px;
+}
+
+.ser-card{
+    border:double #8E3463;
+    background: -webkit-linear-gradient(right,rgb(184, 180, 180),rgb(211, 205, 205))  ;
+}
+.ser-card a{
+    text-decoration: none;
+}
+
+.ser-card a{
+    text-decoration: none;
+}
+
+.ser-card h3{
+    margin: 100px auto;
+}
+
+/*  *******************************      COMPONENTS   *********************************************       */
+
+/* .row-2-card1 div div{
+    max-height: 350px;
+} */
+
+/*   ******************************      ROBOTICS    **********************************************        */
+
+/*   ******************************      CONTACT US  **********************************************        */
+
+.contact-us-body{
+    background-image: url("IMAGE/bg5.jpg");
+    background-size: cover;
+}
+
+.contact-us{
+    background: -webkit-linear-gradient(rgb(184, 180, 180),rgb(219, 215, 215));
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.contact-1{ flex: 3; padding: 50px; } 
+.contact-2{
+     flex: 2; padding: 50px;
+    background-color: rgb(187, 184, 186);
+}
+
+@media only screen and (max-width:875px){
+    .contact-us{ display: block; } 
+}
+
+.contact-2 div form input{
+   height: 50px;
+   width:75%;
+   margin-bottom: 15px;
+   background-color: gray;
+   border: 1px outset;
+}
+
+.contact-2 div form textarea{
+    background-color: gray;
+    height: 100px;
+}
+
+.contact-2 div form input::placeholder, .contact-2 div form textarea::placeholder{
+    color: white;
+    padding-left: 6px;
+}
+
+.contact-1 div h4 , .contact-2 div form h5{
+    color: rgb(105, 37, 101);
+    font-weight: bold;
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+.button-form{
+    background-color: rgb(188, 136, 199) !important;
+    color:rgb(115, 54, 143) ;
+    font-weight: 700 !important;
+    padding: 10px;
+    border-radius: 50px;
+}
+    
+.button-form:hover{
+    background-color: rgb(209, 205, 205);
+    color:rgb(115, 54, 143);
+    transform: scale(1.2,1.2);
+}
+
